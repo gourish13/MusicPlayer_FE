@@ -3,10 +3,11 @@ const Details = (props) => {
 
   return (
     <>
-      <div>{trackListNumber}</div>
-      <div>{songName}</div>
-      <div>{songArtist}</div>
-      <div>{nameAlbumPlaylist}</div>
+      <h3>
+        {trackListNumber}. {songName}
+      </h3>
+      <h5>{songArtist}</h5>
+      <h5>{nameAlbumPlaylist}</h5>
     </>
   );
 };

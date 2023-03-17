@@ -16,15 +16,21 @@ const NowPlaying = (song) => {
 
   return (
     <>
-      <AlbumArtwork albumArtwork={albumArtwork} />
-      <Details
-        trackListNumber={trackListNumber}
-        songName={songName}
-        songArtist={songArtist}
-        nameAlbumPlaylist={nameAlbumPlaylist}
-      />
-      <Buttons />
-      <Bar songPlaytime={songPlaytime} songDuration={songDuration} />
+      <div className="p-10 flex">
+        <div className="w-1/2">
+          <AlbumArtwork albumArtwork={albumArtwork} />
+        </div>
+        <div className="w-1/2">
+          <Details
+            trackListNumber={trackListNumber}
+            songName={songName}
+            songArtist={songArtist}
+            nameAlbumPlaylist={nameAlbumPlaylist}
+          />
+          <Buttons />
+          <Bar songPlaytime={songPlaytime} songDuration={songDuration} />
+        </div>
+      </div>
     </>
   );
 };

@@ -3,7 +3,11 @@ const AlbumArtwork = (props) => {
 
   return (
     <>
-      <div>{albumArtwork}</div>
+      <img
+        style={{ width: "15rem", borderRadius: "5%" }}
+        src={albumArtwork}
+        alt="Album Artwork"
+      />
     </>
   );
 };
